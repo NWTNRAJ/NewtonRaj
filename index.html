@@ -90,20 +90,45 @@
 }
 
 #popup .btn-container {
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #popup .btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 16rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-#popup .btn:hover {
-  background-color: #0056b3;
+#popup .btn-color-1,
+#popup .btn-color-2 {
+  background: none;
+  color: rgb(53, 53, 53);
+}
+
+#popup .btn-color-1:hover,
+#popup .btn-color-2:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+#popup .btn-color-1 {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+#popup .btn-color-2 {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+#popup .btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
 
       </style>
