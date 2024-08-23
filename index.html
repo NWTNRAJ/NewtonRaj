@@ -546,7 +546,44 @@
       </nav>
       <p>Copyright &#169;  NWTN. All Rights Reserved.</p>
     </footer>
+<!-- POPUP -->
+    <div id="popup" class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/Deepfakes.png"
+      alt="Project 1"
+      class="project-img"
+    />
+  </div>
+  <h5 class="article-sub-title project-title">
+    Deepfakes: A New Era of Cyber Threats
+  </h5>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://www.linkedin.com/pulse/understanding-deepfakes-new-era-cyber-threats-newton-raj-tbbjc/?trackingId=Zd%2BVdj0MTmiQ6XXB2HCG0g%3D%3D'"
+    >
+      Check out
+    </button>
+  </div>
+</div>
+
+<!-- /POPUP -->
     <script src="script.js"></script>
+     <script>
+       window.onload = function() {
+  setTimeout(function() {
+    // Show the popup after 3 minutes (180,000 milliseconds)
+    document.getElementById('popup').style.display = 'block';
+  }, 180000);
+
+  setTimeout(function() {
+    // Hide the popup after 4 minutes (240,000 milliseconds)
+    document.getElementById('popup').style.display = 'none';
+  }, 240000);
+};
+
+     </script>
       <script>
     document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.getElementById('typing-effect');
